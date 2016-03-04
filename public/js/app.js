@@ -1,4 +1,6 @@
 var socket = io();
+var moment = require('moment');
+var now = moment();
 
 socket.on('connect', function() {
     console.log('Connected to socket.io server');
